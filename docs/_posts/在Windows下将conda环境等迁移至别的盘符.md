@@ -77,7 +77,8 @@ conda pack -n envs_name
 ```
 这里的envs_name替换为你想要迁移的环境的名称。打包完成后，将会在原目录下生成一个`envs_name.tar.gz`的文件。
 #### 0x03 更新新环境
-将生成的`envs_name.tar.gz`文件移动到新的环境目录下，解压成文件夹即可。使用`conda info -e`命令查看，发现已经出现了这个环境。
+将生成的`envs_name.tar.gz`文件移动到新的环境目录下，解压成文件夹即可。使用`conda info -e`命令查看，发现已经出现了这个环境。可用命令
+tar -zxvf TAR_PATH -C ENV_NAME
 #### 0x04 删除原环境
 ```cmd
 conda remove -p 原环境的目录 --all
